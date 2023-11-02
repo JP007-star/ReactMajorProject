@@ -6,7 +6,7 @@ const student={
     students: []
 }
 
-export default  reducerState=(state=student,action)=>{
+export default (state=student,action)=>{
     switch(action.type){
         case studentConstants.GET_ALL_STUDENTS_REQUEST:
             state={
