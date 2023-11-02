@@ -6,7 +6,7 @@ const student={
     students: []
 }
 
-export default (state=student,action)=>{
+export default  reducer=(state=student,action)=>{
     switch(action.type){
         case studentConstants.GET_ALL_STUDENTS_REQUEST:
             state={
@@ -68,6 +68,8 @@ export default (state=student,action)=>{
                 loading:false
             }
         break
+        default :
+         break
     }
     return state;
 }

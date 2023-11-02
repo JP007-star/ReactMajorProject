@@ -18,7 +18,7 @@ const navigate=useNavigate()
     useEffect(() => {
     dispatch(getStudents());
         console.log(student);
-    }, [])
+    })
 
     const handleDelete=(id)=>{
         const payload={
