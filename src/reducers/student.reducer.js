@@ -6,7 +6,7 @@ const student={
     students: []
 }
 
-export default (state=student,action)=>{
+const fn=(state=student,action)=>{
     switch(action.type){
         case studentConstants.GET_ALL_STUDENTS_REQUEST:
             state={
@@ -73,3 +73,6 @@ export default (state=student,action)=>{
     }
     return state;
 }
+
+
+export default fn;
